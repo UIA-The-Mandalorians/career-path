@@ -207,66 +207,61 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                                       top: 19,
                                                                       right:
                                                                           10),
-                                                              child: Text(
-                                                                  "msg_star_counseller"
-                                                                      .tr,
-                                                                  overflow:
-                                                                      TextOverflow
-                                                                          .ellipsis,
-                                                                  textAlign:
-                                                                      TextAlign
-                                                                          .left,
-                                                                  style: AppStyle
-                                                                      .txtInterSemiBold20)),
+                                                              child: Text("msg_star_counseller".tr,
+                                                                  overflow: TextOverflow.ellipsis,
+                                                                  textAlign: TextAlign.left,
+                                                                  style: AppStyle.txtInterSemiBold20)),
                                                           Align(
-                                                              alignment:
-                                                                  Alignment
-                                                                      .center,
+                                                              alignment: Alignment.center,
                                                               child: Padding(
-                                                                  padding:
-                                                                      getPadding(
-                                                                          left:
-                                                                              13,
-                                                                          top:
-                                                                              9,
-                                                                          right:
-                                                                              9),
-                                                                  child: Row(
-                                                                      mainAxisAlignment:
-                                                                          MainAxisAlignment
-                                                                              .spaceBetween,
-                                                                      crossAxisAlignment:
-                                                                          CrossAxisAlignment
-                                                                              .center,
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .max,
-                                                                      children: [
-                                                                        Container(
-                                                                            decoration:
-                                                                                AppDecoration.outlineGray900.copyWith(borderRadius: BorderRadiusStyle.circleBorder40),
-                                                                            child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.start, children: [
-                                                                              Padding(padding: getPadding(all: 8), child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(32.00)), child: CommonImageView(imagePath: ImageConstant.imgDownload41, height: getSize(64.00), width: getSize(64.00), fit: BoxFit.cover)))
-                                                                            ])),
-                                                                        Container(
-                                                                            decoration:
-                                                                                AppDecoration.outlineGray900.copyWith(borderRadius: BorderRadiusStyle.circleBorder40),
-                                                                            child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.start, children: [
-                                                                              Padding(padding: getPadding(all: 8), child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(32.00)), child: CommonImageView(imagePath: ImageConstant.imgIstockphoto130, height: getSize(64.00), width: getSize(64.00), fit: BoxFit.cover)))
-                                                                            ])),
-                                                                        Container(
-                                                                            decoration:
-                                                                                AppDecoration.outlineGray900.copyWith(borderRadius: BorderRadiusStyle.circleBorder40),
-                                                                            child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.start, children: [
-                                                                              Padding(padding: getPadding(all: 8), child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(32.00)), child: CommonImageView(imagePath: ImageConstant.imgImages21, height: getSize(64.00), width: getSize(64.00), fit: BoxFit.cover)))
-                                                                            ])),
-                                                                        Container(
-                                                                            decoration:
-                                                                                AppDecoration.outlineGray900.copyWith(borderRadius: BorderRadiusStyle.circleBorder40),
-                                                                            child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.start, children: [
-                                                                              Padding(padding: getPadding(all: 8), child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(32.00)), child: CommonImageView(imagePath: ImageConstant.imgRetirementtran, height: getSize(64.00), width: getSize(64.00), fit: BoxFit.cover)))
-                                                                            ]))
-                                                                      ]))),
+                                                                  padding: getPadding(left: 13, top: 9, right: 9),
+                                                                  child: SingleChildScrollView(
+                                                                    scrollDirection: Axis.horizontal,
+                                                                    child: Row(
+                                                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                                                        mainAxisSize: MainAxisSize.max,
+                                                                        children: [
+                                                                          Container(
+                                                                              decoration:
+                                                                                  AppDecoration.outlineGray900.copyWith(borderRadius: BorderRadiusStyle.circleBorder40),
+                                                                              child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.start, children: [
+                                                                                Padding(padding: getPadding(all: 8), child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(32.00)), child: CommonImageView(imagePath: ImageConstant.imgDownload41, height: getSize(64.00), width: getSize(64.00), fit: BoxFit.cover)))
+                                                                              ])),
+                                                                              SizedBox(width: 16,),
+                                                                          Container(
+                                                                              decoration:
+                                                                                  AppDecoration.outlineGray900.copyWith(borderRadius: BorderRadiusStyle.circleBorder40),
+                                                                              child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.start, children: [
+                                                                                Padding(padding: getPadding(all: 8), child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(32.00)), child: CommonImageView(imagePath: ImageConstant.imgIstockphoto130, height: getSize(64.00), width: getSize(64.00), fit: BoxFit.cover)))
+                                                                              ])),
+                                                                              SizedBox(
+                                                                            width:
+                                                                                16,
+                                                                          ),
+
+                                                                          Container(
+                                                                              decoration:
+                                                                                  AppDecoration.outlineGray900.copyWith(borderRadius: BorderRadiusStyle.circleBorder40),
+                                                                              child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.start, children: [
+                                                                                Padding(padding: getPadding(all: 8), child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(32.00)), child: CommonImageView(imagePath: ImageConstant.imgImages21, height: getSize(64.00), width: getSize(64.00), fit: BoxFit.cover)))
+                                                                              ])),
+                                                                              SizedBox(
+                                                                            width:
+                                                                                16,
+                                                                          ),
+
+                                                                          Container(
+                                                                              decoration:
+                                                                                  AppDecoration.outlineGray900.copyWith(borderRadius: BorderRadiusStyle.circleBorder40),
+                                                                              child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.start, children: [
+                                                                                Padding(padding: getPadding(all: 8), child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(32.00)), child: CommonImageView(imagePath: ImageConstant.imgRetirementtran, height: getSize(64.00), width: getSize(64.00), fit: BoxFit.cover)))
+                                                                              ]))
+                                                                        ]
+                                                                    ),
+                                                                  )
+                                                              )
+                                                        ),
                                                           Padding(
                                                               padding:
                                                                   getPadding(
