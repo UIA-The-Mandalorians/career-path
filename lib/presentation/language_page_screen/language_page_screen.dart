@@ -30,19 +30,24 @@ class LanguagePageScreen extends GetWidget<LanguagePageController> {
                                   activeDotColor: ColorConstant.red301,
                                   dotColor: ColorConstant.whiteA700,
                                   dotHeight: getVerticalSize(3.00),
-                                  dotWidth: getHorizontalSize(45.00)))),
+                                  dotWidth: getHorizontalSize(45.00)
+                              )
+                          )
+                      ),
                       Padding(
                           padding: getPadding(left: 61, top: 24, right: 61),
                           child: Text("lbl_choose_language".tr,
                               overflow: TextOverflow.ellipsis,
                               textAlign: TextAlign.left,
-                              style: AppStyle.txtInterBold24)),
+                              style: AppStyle.txtInterBold24)
+                      ),
                       Padding(
                           padding: getPadding(left: 61, top: 21, right: 61),
                           child: Text("msg_learn_in_your_o".tr,
                               overflow: TextOverflow.ellipsis,
                               textAlign: TextAlign.left,
-                              style: AppStyle.txtInterBold20Red300)),
+                              style: AppStyle.txtInterBold20Red300)
+                      ),
                       Align(
                           alignment: Alignment.centerLeft,
                           child: Container(
@@ -65,13 +70,12 @@ class LanguagePageScreen extends GetWidget<LanguagePageController> {
                                                       alignment: Alignment.centerLeft,
                                                       child: CommonImageView(
                                                           imagePath: ImageConstant.imgRectangle27,
-                                                          height:getVerticalSize(554.00),
-                                                          width:getHorizontalSize(393.00)
+                                                          height: getVerticalSize(554.00),
+                                                          width: getHorizontalSize(393.00)
                                                       )
                                                   ),
                                                   Align(
-                                                      alignment:
-                                                          Alignment.topRight,
+                                                      alignment: Alignment.topRight,
                                                       child: Container(
                                                           width: getHorizontalSize(311.00),
                                                           margin: getMargin(
@@ -93,10 +97,10 @@ class LanguagePageScreen extends GetWidget<LanguagePageController> {
                                                                     child: Text("msg_choose_from_the".tr,
                                                                         overflow: TextOverflow.ellipsis,
                                                                         textAlign: TextAlign.left,
-                                                                        style: AppStyle.txtInterBold20Black900)),
+                                                                        style: AppStyle.txtInterBold20Black900)
+                                                                ),
                                                                 Padding(
-                                                                    padding:
-                                                                        getPadding(top: 12),
+                                                                    padding: getPadding(top: 12),
                                                                     child: Row(
                                                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                         crossAxisAlignment: CrossAxisAlignment.center,

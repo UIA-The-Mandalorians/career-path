@@ -18,15 +18,17 @@ class HomePageScreen extends GetWidget<HomePageController> {
                     width: getHorizontalSize(35.00),
                     svgPath: ImageConstant.imgMenu,
                     margin: getMargin(left: 15, top: 14, bottom: 16),
-                    onTap: onTapMenu),
+                    onTap: onTapMenu
+                ),
                 actions: [
                   AppbarImage(
                       height: getSize(35.00),
                       width: getSize(35.00),
                       svgPath: ImageConstant.imgSearch,
-                      margin:
-                          getMargin(left: 12, top: 10, right: 12, bottom: 10))
-                ]),
+                      margin: getMargin(left: 12, top: 10, right: 12, bottom: 10)
+                  )
+                ]
+            ),
             body: Container(
                 width: size.width,
                 child: SingleChildScrollView(
@@ -45,11 +47,16 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                           left: 43,
                                           top: 9,
                                           right: 43,
-                                          bottom: 10),
+                                          bottom: 10
+                                      ),
                                       decoration: BoxDecoration(
                                           color: ColorConstant.whiteA7007f,
                                           borderRadius: BorderRadius.circular(
-                                              getHorizontalSize(17.50))))),
+                                              getHorizontalSize(17.50)
+                                          )
+                                      )
+                                  )
+                              ),
                               Align(
                                   alignment: Alignment.centerLeft,
                                   child: Container(
@@ -62,12 +69,11 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                             Align(
                                                 alignment: Alignment.centerLeft,
                                                 child: CommonImageView(
-                                                    imagePath: ImageConstant
-                                                        .imgRectangle27,
-                                                    height:
-                                                        getVerticalSize(748.00),
-                                                    width: getHorizontalSize(
-                                                        393.00))),
+                                                    imagePath: ImageConstant.imgRectangle27,
+                                                    height: getVerticalSize(758.00),
+                                                    width: getHorizontalSize(393.00)
+                                                )
+                                            ),
                                             Align(
                                                 alignment:
                                                     Alignment.bottomCenter,
@@ -78,50 +84,33 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                         right: 10,
                                                         bottom: 42),
                                                     child: Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.min,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .start,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .start,
+                                                        mainAxisSize: MainAxisSize.min,
+                                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                                        mainAxisAlignment: MainAxisAlignment.start,
                                                         children: [
                                                           Align(
-                                                              alignment:
-                                                                  Alignment
-                                                                      .center,
+                                                              alignment: Alignment.center,
                                                               child: Padding(
-                                                                  padding:
-                                                                      getPadding(
-                                                                          left:
-                                                                              9,
-                                                                          right:
-                                                                              13),
+                                                                  padding:getPadding(left: 9, right: 13),
                                                                   child: Row(
-                                                                      mainAxisAlignment:
-                                                                          MainAxisAlignment
-                                                                              .start,
-                                                                      crossAxisAlignment:
-                                                                          CrossAxisAlignment
-                                                                              .start,
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .max,
+                                                                      mainAxisAlignment: MainAxisAlignment.start,
+                                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                                      mainAxisSize: MainAxisSize.max,
                                                                       children: [
                                                                         Text(
-                                                                            "lbl_study_abroad"
-                                                                                .tr,
-                                                                            overflow:
-                                                                                TextOverflow.ellipsis,
+                                                                            "lbl_study_abroad".tr,
+                                                                            overflow: TextOverflow.ellipsis,
                                                                             textAlign: TextAlign.left,
-                                                                            style: AppStyle.txtInterSemiBold16),
+                                                                            style: AppStyle.txtInterSemiBold16
+                                                                        ),
                                                                         Padding(
                                                                             padding: getPadding(
                                                                                 left: 2,
                                                                                 top: 6,
                                                                                 bottom: 5),
-                                                                            child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(3.00)), child: CommonImageView(svgPath: ImageConstant.imgArrowdown, height: getVerticalSize(8.00), width: getHorizontalSize(12.00), fit: BoxFit.cover))),
+                                                                            child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(3.00)), child: CommonImageView(svgPath: ImageConstant.imgArrowdown, height: getVerticalSize(8.00), width: getHorizontalSize(12.00), fit: BoxFit.cover))
+                                                                        ),
+                                                                        Spacer(),
                                                                         Padding(
                                                                             padding:
                                                                                 getPadding(left: 21),
@@ -132,35 +121,36 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                                                 top: 6,
                                                                                 bottom: 5),
                                                                             child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(3.00)), child: CommonImageView(svgPath: ImageConstant.imgArrowdown, height: getVerticalSize(8.00), width: getHorizontalSize(12.00), fit: BoxFit.cover))),
+                                                                        Spacer(),
                                                                         Padding(
                                                                             padding:
-                                                                                getPadding(left: 19),
+                                                                                getPadding(left: 21),
                                                                             child: Text("lbl_careers".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtInterSemiBold16)),
                                                                         Padding(
                                                                             padding: getPadding(
                                                                                 left: 2,
                                                                                 top: 6,
-                                                                                bottom: 5),
+                                                                                bottom: 5
+                                                                            ),
                                                                             child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(3.00)), child: CommonImageView(svgPath: ImageConstant.imgArrowdown, height: getVerticalSize(8.00), width: getHorizontalSize(12.00), fit: BoxFit.cover)))
-                                                                      ]))),
+                                                                      ]
+                                                                  )
+                                                              )
+                                                          ),
                                                           Padding(
                                                               padding:
                                                                   getPadding(
                                                                       left: 7,
                                                                       top: 22,
                                                                       right:
-                                                                          10),
-                                                              child: Text(
-                                                                  "lbl_explore"
-                                                                      .tr,
-                                                                  overflow:
-                                                                      TextOverflow
-                                                                          .ellipsis,
-                                                                  textAlign:
-                                                                      TextAlign
-                                                                          .left,
-                                                                  style: AppStyle
-                                                                      .txtInterSemiBold20)),
+                                                                          10
+                                                                  ),
+                                                              child: Text("lbl_explore".tr,
+                                                                  overflow: TextOverflow.ellipsis,
+                                                                  textAlign: TextAlign.left,
+                                                                  style: AppStyle.txtInterSemiBold20
+                                                              )
+                                                          ),
                                                           Container(
                                                               margin: getMargin(
                                                                   left: 7,
@@ -169,19 +159,11 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                               decoration: AppDecoration
                                                                   .outlineBlack900
                                                                   .copyWith(
-                                                                      borderRadius:
-                                                                          BorderRadiusStyle
-                                                                              .roundedBorder22),
+                                                                      borderRadius: BorderRadiusStyle.roundedBorder22),
                                                               child: Row(
-                                                                  mainAxisAlignment:
-                                                                      MainAxisAlignment
-                                                                          .start,
-                                                                  crossAxisAlignment:
-                                                                      CrossAxisAlignment
-                                                                          .center,
-                                                                  mainAxisSize:
-                                                                      MainAxisSize
-                                                                          .max,
+                                                                  mainAxisAlignment: MainAxisAlignment.start,
+                                                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                                                  mainAxisSize: MainAxisSize.max,
                                                                   children: [
                                                                     Padding(
                                                                         padding: getPadding(
@@ -213,7 +195,9 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                                                 null,
                                                                             textAlign:
                                                                                 TextAlign.center,
-                                                                            style: AppStyle.txtInterBold16Black900))
+                                                                            style: AppStyle.txtInterBold16Black900
+                                                                        )
+                                                                      )
                                                                   ])),
                                                           Padding(
                                                               padding:

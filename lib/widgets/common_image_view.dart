@@ -69,7 +69,7 @@ class CommonImageView extends StatelessWidget {
           width: 30,
           child: LinearProgressIndicator(
             color: Colors.grey.shade200,
-            backgroundColor: Colors.grey.shade100,
+            backgroundColor: Color.fromARGB(255, 110, 34, 34),
           ),
         ),
         errorWidget: (context, url, error) => Image.asset(
