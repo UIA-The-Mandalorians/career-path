@@ -11,7 +11,7 @@ class HomePageScreen extends GetWidget<HomePageController> {
     return SafeArea(
         child: Scaffold(
             appBar: CustomAppBar(
-                height: getVerticalSize(56.00),
+                height: getVerticalSize(70.00),
                 leadingWidth: 50,
                 leading: AppbarImage(
                     height: getVerticalSize(25.00),
@@ -30,6 +30,7 @@ class HomePageScreen extends GetWidget<HomePageController> {
                 ]
             ),
             body: Container(
+                color: Color.fromARGB(255, 63, 72, 204),
                 width: size.width,
                 child: SingleChildScrollView(
                     child: Container(
@@ -38,25 +39,25 @@ class HomePageScreen extends GetWidget<HomePageController> {
                         child: Stack(
                             alignment: Alignment.centerLeft,
                             children: [
-                              Align(
-                                  alignment: Alignment.topLeft,
-                                  child: Container(
-                                      height: getVerticalSize(35.00),
-                                      width: getHorizontalSize(100.00),
-                                      margin: getMargin(
-                                          left: 43,
-                                          top: 9,
-                                          right: 43,
-                                          bottom: 10
-                                      ),
-                                      decoration: BoxDecoration(
-                                          color: ColorConstant.whiteA7007f,
-                                          borderRadius: BorderRadius.circular(
-                                              getHorizontalSize(17.50)
-                                          )
-                                      )
-                                  )
-                              ),
+                              // Align(
+                              //     alignment: Alignment.topLeft,
+                              //     child: Container(
+                              //         height: getVerticalSize(35.00),
+                              //         width: getHorizontalSize(100.00),
+                              //         margin: getMargin(
+                              //             left: 43,
+                              //             top: 9,
+                              //             right: 43,
+                              //             bottom: 10
+                              //         ),
+                              //         decoration: BoxDecoration(
+                              //             color: ColorConstant.whiteA7007f,
+                              //             borderRadius: BorderRadius.circular(
+                              //                 getHorizontalSize(17.50)
+                              //             )
+                              //         )
+                              //     )
+                              // ),
                               Align(
                                   alignment: Alignment.centerLeft,
                                   child: Container(
