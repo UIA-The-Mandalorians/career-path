@@ -3,7 +3,7 @@ import 'package:app/presentation/landing_page_screen/binding/landing_page_bindin
 import 'package:app/presentation/language_page_screen/language_page_screen.dart';
 import 'package:app/presentation/language_page_screen/binding/language_page_binding.dart';
 import 'package:app/presentation/login_page_screen/login_page_screen.dart';
-import 'package:app/presentation/login_page_screen/binding/login_page_binding.dart';
+// import 'package:app/presentation/login_page_screen/binding/login_page_binding.dart';
 import 'package:app/presentation/home_page_screen/home_page_screen.dart';
 import 'package:app/presentation/home_page_screen/binding/home_page_binding.dart';
 import 'package:app/presentation/profile_screen/profile_screen.dart';
