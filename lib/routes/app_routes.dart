@@ -42,13 +42,13 @@ class AppRoutes {
         LanguagePageBinding(),
       ],
     ),
-    GetPage(
-      name: loginPageScreen,
-      page: () => LoginPageScreen(),
-      bindings: [
-        LoginPageBinding(),
-      ],
-    ),
+    // GetPage(
+    //   // name: loginPageScreen,
+    //   // page: () => LoginPageScreen(),
+    //   // bindings: [
+    //   //   LoginPageBinding(),
+    //   // ],
+    // ),
     GetPage(
       name: homePageScreen,
       page: () => HomePageScreen(),
