@@ -1,3 +1,5 @@
+import 'package:app/presentation/careers/careers.dart';
+import 'package:app/presentation/chat/chat.dart';
 import 'package:app/presentation/landing_page_screen/landing_page_screen.dart';
 import 'package:app/presentation/landing_page_screen/binding/landing_page_binding.dart';
 import 'package:app/presentation/language_page_screen/language_page_screen.dart';
@@ -10,6 +12,8 @@ import 'package:app/presentation/profile_screen/profile_screen.dart';
 import 'package:app/presentation/profile_screen/binding/profile_binding.dart';
 import 'package:app/presentation/app_navigation_screen/app_navigation_screen.dart';
 import 'package:app/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
+import 'package:app/presentation/scholarships/scholarships.dart';
+import 'package:app/presentation/study/study_page.dart';
 import 'package:get/get.dart';
 
 class AppRoutes {
@@ -22,6 +26,14 @@ class AppRoutes {
   static String homePageScreen = '/home_page_screen';
 
   static String profileScreen = '/profile_screen';
+
+  static String scholarships = '/scholarship';
+
+  static String study = '/study';
+
+  static String careers = '/careers';
+
+  static String chat = '/chat';
 
   static String appNavigationScreen = '/app_navigation_screen';
 
@@ -38,6 +50,34 @@ class AppRoutes {
     GetPage(
       name: languagePageScreen,
       page: () => LanguagePageScreen(),
+      bindings: [
+        LanguagePageBinding(),
+      ],
+    ),
+    GetPage(
+      name: chat,
+      page: () => ChatPage(),
+      bindings: [
+        LanguagePageBinding(),
+      ],
+    ),
+    GetPage(
+      name: study,
+      page: () => StudyPage(),
+      bindings: [
+        LanguagePageBinding(),
+      ],
+    ),
+    GetPage(
+      name: careers,
+      page: () => CareersPage(),
+      bindings: [
+        LanguagePageBinding(),
+      ],
+    ),
+    GetPage(
+      name: scholarships,
+      page: () => Scholarship(),
       bindings: [
         LanguagePageBinding(),
       ],
