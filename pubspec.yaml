@@ -7,6 +7,8 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.5
+  flutter_localizations: # Add this line
+    sdk: flutter
   connectivity_plus: ^2.3.6
   shared_preferences: ^2.0.15
   cached_network_image: ^3.2.1

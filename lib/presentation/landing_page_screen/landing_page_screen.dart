@@ -147,6 +147,6 @@ class LandingPageScreen extends GetWidget<LandingPageController> {
   }
 
   onTapGetstarted() {
-    Get.toNamed(AppRoutes.languagePageScreen);
+    Get.toNamed(AppRoutes.homePageScreen);
   }
 }

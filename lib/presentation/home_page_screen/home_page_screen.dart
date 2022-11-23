@@ -28,7 +28,7 @@ class HomePageScreen extends GetWidget<HomePageController> {
                           getMargin(left: 12, top: 10, right: 12, bottom: 10))
                 ]),
             body: Container(
-                color: Color.fromARGB(255, 63, 72, 204),
+                color: Color.fromARGB(255, 26, 23, 57),
                 width: size.width,
                 child: SingleChildScrollView(
                     child: Container(
@@ -386,7 +386,8 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                                             imagePath:
                                                                                 ImageConstant.imgNextpage,
                                                                             height: getVerticalSize(28.00),
-                                                                            width: getHorizontalSize(32.00))),
+                                                                            width: getHorizontalSize(28.00))
+                                                                    ),
                                                                     Padding(
                                                                         padding: getPadding(
                                                                             left:
@@ -420,29 +421,25 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                                           right:
                                                                               1),
                                                                   child: Row(
-                                                                      mainAxisAlignment:
-                                                                          MainAxisAlignment
-                                                                              .spaceBetween,
-                                                                      crossAxisAlignment:
-                                                                          CrossAxisAlignment
-                                                                              .center,
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .max,
+                                                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                                                      mainAxisSize: MainAxisSize.max,
                                                                       children: [
                                                                         Container(
-                                                                            width: getHorizontalSize(
-                                                                                182.00),
+                                                                            width: getHorizontalSize(182.00),
                                                                             child: Text("msg_software_engine".tr,
                                                                                 maxLines: null,
                                                                                 textAlign: TextAlign.center,
                                                                                 style: AppStyle.txtInterBold15)),
                                                                         Container(
-                                                                            width:
-                                                                                getHorizontalSize(163.00),
+                                                                            width: getHorizontalSize(163.00),
                                                                             margin: getMargin(bottom: 2),
-                                                                            child: Text("msg_construction_ma".tr, maxLines: null, textAlign: TextAlign.center, style: AppStyle.txtInterBold15))
-                                                                      ]))),
+                                                                            child: Text("msg_construction_ma".tr, maxLines: null, textAlign: TextAlign.center, style: AppStyle.txtInterBold15)
+                                                                        )
+                                                                      ]
+                                                                  )
+                                                              )
+                                                          ),
                                                           Align(
                                                               alignment:
                                                                   Alignment
