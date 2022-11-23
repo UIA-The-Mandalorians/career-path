@@ -16,7 +16,7 @@ class HomePageScreen extends GetWidget<HomePageController> {
                 leading: AppbarImage(
                     height: getVerticalSize(25.00),
                     width: getHorizontalSize(35.00),
-                    svgPath: ImageConstant.imgMenu,
+                    imagePath: ImageConstant.imgUser1,
                     margin: getMargin(left: 15, top: 14, bottom: 16),
                     onTap: onTapMenu
                 ),
@@ -142,7 +142,7 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                               padding:
                                                                   getPadding(
                                                                       left: 7,
-                                                                      top: 22,
+                                                                      top: 32,
                                                                       right:
                                                                           10
                                                                   ),

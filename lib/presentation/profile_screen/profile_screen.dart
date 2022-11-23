@@ -11,7 +11,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
         child: Scaffold(
             backgroundColor: ColorConstant.gray901,
             appBar: CustomAppBar(
-                height: getVerticalSize(56.00),
+                height: getVerticalSize(60.00),
                 leadingWidth: 45,
                 leading: AppbarImage(
                     height: getVerticalSize(25.00),
@@ -24,8 +24,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                       height: getSize(32.00),
                       width: getSize(32.00),
                       imagePath: ImageConstant.imgEdit61,
-                      margin:
-                          getMargin(left: 25, top: 12, right: 25, bottom: 12))
+                      margin:getMargin(left: 25, top: 12, right: 25, bottom: 12))
                 ]),
             body: Container(
                 width: size.width,
@@ -37,7 +36,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                       Align(
                           alignment: Alignment.center,
                           child: Padding(
-                              padding: getPadding(left: 23, top: 7, right: 23),
+                              padding: getPadding(left: 23, top: 16, right: 23),
                               child: Text("lbl_your_profile".tr,
                                   overflow: TextOverflow.ellipsis,
                                   textAlign: TextAlign.left,
@@ -51,11 +50,11 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                   height: getSize(160.00),
                                   width: getSize(160.00)))),
                       Align(
-                          alignment: Alignment.centerRight,
+                          alignment: Alignment.topRight,
                           child: Padding(
-                              padding: getPadding(left: 57, top: 17, right: 57),
+                              padding: getPadding(left: 54, top: 17, right: 37),
                               child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
@@ -64,7 +63,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                         textAlign: TextAlign.left,
                                         style: AppStyle.txtInterBold22),
                                     Padding(
-                                        padding: getPadding(left: 23, top: 3),
+                                        padding: getPadding(left: 18, top: 3),
                                         child: CommonImageView(
                                             svgPath: ImageConstant.imgEdit,
                                             height: getSize(22.00),
@@ -105,10 +104,9 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                                   height: getSize(36.00),
                                                   width: getSize(36.00))),
                                           Padding(
-                                              padding: getPadding(top: 26),
+                                              padding: getPadding(top: 34),
                                               child: CommonImageView(
-                                                  svgPath: ImageConstant
-                                                      .imgMenu36x36,
+                                                  svgPath: ImageConstant.imgMenu36x36,
                                                   height: getSize(36.00),
                                                   width: getSize(36.00)))
                                         ]),
@@ -159,8 +157,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                                       overflow:
                                                           TextOverflow.ellipsis,
                                                       textAlign: TextAlign.left,
-                                                      style: AppStyle
-                                                          .txtInterBold20WhiteA700))
+                                                      style: AppStyle.txtInterBold20WhiteA700))
                                             ]))
                                   ]))),
                       Align(

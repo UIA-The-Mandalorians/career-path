@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       fallbackLocale: Locale('en', 'US'),
       title: 'Career Path',
       initialBinding: InitialBindings(),
-      initialRoute: AppRoutes.homePageScreen,
+      initialRoute: AppRoutes.profileScreen,
       getPages: AppRoutes.pages,
     );
   }
