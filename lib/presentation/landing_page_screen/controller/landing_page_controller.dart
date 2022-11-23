@@ -7,8 +7,8 @@ class LandingPageController extends GetxController {
   @override
   void onReady() {
     super.onReady();
-    Future.delayed(const Duration(milliseconds: 3000), () {
-      Get.toNamed(AppRoutes.languagePageScreen);
+    Future.delayed(const Duration(milliseconds: 5000), () {
+      Get.offNamed(AppRoutes.languagePageScreen);
     });
   }
 

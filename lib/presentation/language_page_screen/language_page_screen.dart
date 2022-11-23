@@ -210,6 +210,6 @@ class _LanguagePageState extends State<LanguagePageScreen> {
   }
 
   onTapContinue() {
-    Get.toNamed(AppRoutes.landingPageScreen);
+    Get.offNamed(AppRoutes.loginPageScreen);
   }
 }
