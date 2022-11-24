@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'dart:async';
 
 class ScholarshipR {
-  final url = Uri.parse("http://192.168.137.57:3500/api/v1/scholarship");
+  final url = Uri.parse("http://192.168.137.225:3500/api/v1/scholarship");
 
   Future<List<Data>> getAllPosts() async {
     final response = await http.get(url);

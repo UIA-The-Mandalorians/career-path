@@ -14,6 +14,8 @@ import 'package:app/presentation/app_navigation_screen/binding/app_navigation_bi
 import 'package:app/presentation/results/results.dart';
 import 'package:app/presentation/scholarships/details.dart';
 import 'package:app/presentation/scholarships/scholarships.dart';
+import 'package:app/presentation/splash/binding/page_binding.dart';
+import 'package:app/presentation/splash/splahs.dart';
 import 'package:app/presentation/study/study_page.dart';
 import 'package:app/presentation/teste/start_test.dart';
 import 'package:app/presentation/teste/test_completion.dart';
@@ -22,6 +24,8 @@ import 'package:get/get.dart';
 
 class AppRoutes {
   static String landingPageScreen = '/landing_page_screen';
+
+  static String splash = '/splash';
 
   static String languagePageScreen = '/language_page_screen';
 
@@ -78,6 +82,13 @@ class AppRoutes {
       page: () => ChatPage(),
       bindings: [
         LanguagePageBinding(),
+      ],
+    ),
+    GetPage(
+      name: splash,
+      page: () => Splash(),
+      bindings: [
+        SplashPageBinding(),
       ],
     ),
     GetPage(

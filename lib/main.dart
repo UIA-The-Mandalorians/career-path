@@ -89,7 +89,7 @@ class _MyAppState extends State<MyApp> {
           fallbackLocale: Locale('en', 'US'),
           title: 'Career Path',
           initialBinding: InitialBindings(),
-          initialRoute: AppRoutes.landingPageScreen,
+          initialRoute: AppRoutes.splash,
           getPages: AppRoutes.pages,
         ),
       ),

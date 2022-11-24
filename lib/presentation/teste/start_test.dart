@@ -46,7 +46,7 @@ guidance based on the test
                           elevation: 10, // Elevation
                         ),
                         onPressed: () {
-                          Get.toNamed(AppRoutes.completion)
+                          launchUrl(Uri.parse("http://192.168.137.225:5000"))
                         ;},
                         child: Text(
                           "Start test",
