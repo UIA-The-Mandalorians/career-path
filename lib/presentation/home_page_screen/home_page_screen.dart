@@ -121,7 +121,7 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                                             Get.toNamed(AppRoutes.study);
                                                                           },
                                                                           child: Text(
-                                                                              "lbl_study_abroad".tr,
+                                                                              "lbl_video".tr,
                                                                               overflow: TextOverflow.ellipsis,
                                                                               textAlign: TextAlign.left,
                                                                               style: AppStyle.txtInterSemiBold16),
@@ -228,14 +228,18 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                                                 10,
                                                                             bottom:
                                                                                 9),
-                                                                        child: Text(
-                                                                            "msg_take_test_to_ge"
-                                                                                .tr,
-                                                                            maxLines:
-                                                                                null,
-                                                                            textAlign:
-                                                                                TextAlign.center,
-                                                                            style: AppStyle.txtInterBold16Black900))
+                                                                        child:
+                                                                            InkWell(
+                                                                          onTap:
+                                                                              () {
+                                                                            Get.toNamed(AppRoutes.test);
+                                                                          },
+                                                                          child: Text(
+                                                                              "msg_take_test_to_ge".tr,
+                                                                              maxLines: null,
+                                                                              textAlign: TextAlign.center,
+                                                                              style: AppStyle.txtInterBold16Black900),
+                                                                        ))
                                                                   ])),
                                                           Padding(
                                                               padding:
@@ -273,9 +277,14 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                                     scrollDirection:
                                                                         Axis.horizontal,
                                                                     child: Row(
-                                                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                                                        mainAxisSize: MainAxisSize.max,
+                                                                        mainAxisAlignment:
+                                                                            MainAxisAlignment
+                                                                                .spaceBetween,
+                                                                        crossAxisAlignment:
+                                                                            CrossAxisAlignment
+                                                                                .center,
+                                                                        mainAxisSize:
+                                                                            MainAxisSize.max,
                                                                         children: [
                                                                           InkWell(
                                                                             onTap:
@@ -386,8 +395,7 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                                             imagePath:
                                                                                 ImageConstant.imgNextpage,
                                                                             height: getVerticalSize(28.00),
-                                                                            width: getHorizontalSize(28.00))
-                                                                    ),
+                                                                            width: getHorizontalSize(28.00))),
                                                                     Padding(
                                                                         padding: getPadding(
                                                                             left:
@@ -421,25 +429,29 @@ class HomePageScreen extends GetWidget<HomePageController> {
                                                                           right:
                                                                               1),
                                                                   child: Row(
-                                                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                                                      mainAxisSize: MainAxisSize.max,
+                                                                      mainAxisAlignment:
+                                                                          MainAxisAlignment
+                                                                              .spaceBetween,
+                                                                      crossAxisAlignment:
+                                                                          CrossAxisAlignment
+                                                                              .center,
+                                                                      mainAxisSize:
+                                                                          MainAxisSize
+                                                                              .max,
                                                                       children: [
                                                                         Container(
-                                                                            width: getHorizontalSize(182.00),
+                                                                            width: getHorizontalSize(
+                                                                                182.00),
                                                                             child: Text("msg_software_engine".tr,
                                                                                 maxLines: null,
                                                                                 textAlign: TextAlign.center,
                                                                                 style: AppStyle.txtInterBold15)),
                                                                         Container(
-                                                                            width: getHorizontalSize(163.00),
+                                                                            width:
+                                                                                getHorizontalSize(163.00),
                                                                             margin: getMargin(bottom: 2),
-                                                                            child: Text("msg_construction_ma".tr, maxLines: null, textAlign: TextAlign.center, style: AppStyle.txtInterBold15)
-                                                                        )
-                                                                      ]
-                                                                  )
-                                                              )
-                                                          ),
+                                                                            child: Text("msg_construction_ma".tr, maxLines: null, textAlign: TextAlign.center, style: AppStyle.txtInterBold15))
+                                                                      ]))),
                                                           Align(
                                                               alignment:
                                                                   Alignment

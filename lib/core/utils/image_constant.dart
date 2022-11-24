@@ -11,6 +11,12 @@ class ImageConstant {
 
   static String imgReply = 'assets/images/img_reply.svg';
 
+  static String background = 'assets/images/drive-steering-wheel.jpg';
+
+  static String video01 = 'assets/images/video1.jpg';
+
+  static String video02 = 'assets/images/video2.jpg';
+
   static String imgTest1 = 'assets/images/img_test1.png';
 
   static String imgEdit61 = 'assets/images/img_edit61.png';
@@ -18,6 +24,8 @@ class ImageConstant {
   static String imgSettings = 'assets/images/img_settings.svg';
 
   static String imgFolder = 'assets/images/img_folder.svg';
+
+  static String scholarships = "assets/images/HomePage.png";
 
   static String imgIcons8facebook = 'assets/images/img_icons8facebook.png';
 

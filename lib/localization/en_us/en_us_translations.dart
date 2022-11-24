@@ -12,6 +12,7 @@ final Map<String, String> enUs = {
   "lbl_your_profile": "Your Profile",
   "lbl_language_page": "Language Page",
   "lbl_english": "English",
+  "lbl_video": "Videos",
   "msg_don_t_have_an_a": "Don’t have an account? Register",
   "lbl_choose_language": "Choose Language",
   "msg_make_your_dream": "Make your dreams come true",

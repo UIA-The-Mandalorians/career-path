@@ -4,6 +4,7 @@ import 'package:app/business/auth/firebase_authe.dart';
 import 'package:app/business/bloc/authentication_bloc.dart';
 import 'package:app/core/constants/language_constants.dart';
 import 'package:app/firebase_options.dart';
+import 'package:app/presentation/scholarships/bloc/scholarship_bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
@@ -59,7 +60,8 @@ class _MyAppState extends State<MyApp> {
       create: (context) => FirebaseAuthService(authService: FirebaseAuth.instance),
       child: MultiBlocProvider(
         providers: [
-          BlocProvider(create: (context) => LoginBloc(authService: context.read<FirebaseAuthService>()))
+          BlocProvider(create: (context) => LoginBloc(authService: context.read<FirebaseAuthService>())),
+          BlocProvider(create: (context) => ScholarshipBloc()..add(FecthDataEvent()), lazy: false,),
         ],
         child: GetMaterialApp(
           debugShowCheckedModeBanner: false,

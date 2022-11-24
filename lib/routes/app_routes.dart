@@ -11,8 +11,11 @@ import 'package:app/presentation/profile_screen/profile_screen.dart';
 import 'package:app/presentation/profile_screen/binding/profile_binding.dart';
 import 'package:app/presentation/app_navigation_screen/app_navigation_screen.dart';
 import 'package:app/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
+import 'package:app/presentation/scholarships/details.dart';
 import 'package:app/presentation/scholarships/scholarships.dart';
 import 'package:app/presentation/study/study_page.dart';
+import 'package:app/presentation/teste/start_test.dart';
+import 'package:app/presentation/video/video.dart';
 import 'package:get/get.dart';
 
 class AppRoutes {
@@ -28,9 +31,13 @@ class AppRoutes {
 
   static String scholarships = '/scholarship';
 
+  static String test = '/test';
+
   static String study = '/study';
 
   static String careers = '/careers';
+
+  static String details = '/detailsSchools';
 
   static String chat = '/chat';
 
@@ -60,9 +67,23 @@ class AppRoutes {
         LanguagePageBinding(),
       ],
     ),
+     GetPage(
+      name: test,
+      page: () => StartTest(),
+      bindings: [
+        LanguagePageBinding(),
+      ],
+    ),
+    GetPage(
+      name: details,
+      page: () => DetailPage(),
+      bindings: [
+        LanguagePageBinding(),
+      ],
+    ),
     GetPage(
       name: study,
-      page: () => StudyPage(),
+      page: () => Video(),
       bindings: [
         LanguagePageBinding(),
       ],
