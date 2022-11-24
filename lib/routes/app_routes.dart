@@ -11,10 +11,12 @@ import 'package:app/presentation/profile_screen/profile_screen.dart';
 import 'package:app/presentation/profile_screen/binding/profile_binding.dart';
 import 'package:app/presentation/app_navigation_screen/app_navigation_screen.dart';
 import 'package:app/presentation/app_navigation_screen/binding/app_navigation_binding.dart';
+import 'package:app/presentation/results/results.dart';
 import 'package:app/presentation/scholarships/details.dart';
 import 'package:app/presentation/scholarships/scholarships.dart';
 import 'package:app/presentation/study/study_page.dart';
 import 'package:app/presentation/teste/start_test.dart';
+import 'package:app/presentation/teste/test_completion.dart';
 import 'package:app/presentation/video/video.dart';
 import 'package:get/get.dart';
 
@@ -23,7 +25,11 @@ class AppRoutes {
 
   static String languagePageScreen = '/language_page_screen';
 
+  static String result = '/result';
+
   static String loginPageScreen = '/login_page_screen';
+
+  static String completion = '/completion';
 
   static String homePageScreen = '/home_page_screen';
 
@@ -61,13 +67,27 @@ class AppRoutes {
       ],
     ),
     GetPage(
+      name: completion,
+      page: () => Completion(),
+      bindings: [
+        LanguagePageBinding(),
+      ],
+    ),
+    GetPage(
       name: chat,
       page: () => ChatPage(),
       bindings: [
         LanguagePageBinding(),
       ],
     ),
-     GetPage(
+    GetPage(
+      name: result,
+      page: () => Result(),
+      bindings: [
+        LanguagePageBinding(),
+      ],
+    ),
+    GetPage(
       name: test,
       page: () => StartTest(),
       bindings: [

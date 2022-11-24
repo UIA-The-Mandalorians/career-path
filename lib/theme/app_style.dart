@@ -68,7 +68,7 @@ class AppStyle {
   static TextStyle txtInterSemiBold16 = TextStyle(
     color: ColorConstant.black900,
     fontSize: getFontSize(
-      16,
+      20,
     ),
     fontFamily: 'Inter',
     fontWeight: FontWeight.w600,

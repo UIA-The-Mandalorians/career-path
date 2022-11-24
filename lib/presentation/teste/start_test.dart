@@ -46,7 +46,7 @@ guidance based on the test
                           elevation: 10, // Elevation
                         ),
                         onPressed: () {
-                          Get.toNamed(AppRoutes.chat)
+                          Get.toNamed(AppRoutes.completion)
                         ;},
                         child: Text(
                           "Start test",
